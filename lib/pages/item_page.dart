@@ -12,15 +12,17 @@ class ItemPage extends StatelessWidget {
         title: Text(item.name),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0), // Perbaiki padding
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            // Menampilkan gambar buku
             Image.network(
               item.imageUrl,
               width: 140,
               height: 200,
             ),
             SizedBox(height: 20),
+            // Menampilkan judul buku
             Text(
               item.name,
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
